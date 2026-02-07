@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Panier — Mignon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-cart">
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="index.html" aria-label="Retour à l'accueil">
+        <h1>☁️ MIGNON</h1>
+      </a>
+      <nav><a href="index.html">← Retour aux produits</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cart-section">
+      <h2>Votre panier</h2>
+      <div id="cart-empty" class="cart-empty">Votre panier est vide.</div>
+      <div id="cart-items" class="cart-items"></div>
+
+      <div class="cart-summary">
+        <strong>Total: <span id="cart-total">0,00 €</span></strong>
+      </div>
+
+      <section class="checkout">
+        <h3>Commander</h3>
+        <form id="checkout-form" class="checkout-form">
+          <label>Nom complet <input name="name" required /></label>
+          <label>Téléphone <input name="phone" required /></label>
+          <label>Adresse de livraison <textarea name="address" required></textarea></label>
+          <button type="submit" class="cta-button">Confirmer la commande</button>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>© MIGNON</p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
